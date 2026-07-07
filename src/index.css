@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+    /* Palette bleue */
+    --color-primary: #1d4ed8;
+    --color-primary-light: #3b82f6;
+    --color-primary-pale: #93c5fd;
+    --color-accent: #38bdf8;
+
+    /* Fonds sombres */
+    --color-dark-bg: #0d1117;
+    --color-dark-card: #0f1a2e;
+    --color-dark-border: #1e2d40;
+    --color-dark-section: bg-slate-950;
+
+    /* Police */
+    --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-dark-bg text-slate-200 font-sans;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-dark-bg;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-primary rounded-full;
+    }
+}
+
+/* Animation de défilement horizontal infini */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        /* -50% car le tableau est dupliqué — on défile exactement la moitié */
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+/* Pause au survol — l'utilisateur peut regarder une photo précise */
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
