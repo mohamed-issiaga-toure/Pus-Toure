@@ -17,20 +17,20 @@ import { fadeUp, staggerContainer, defaultTransition } from '../util/animations'
 import contactInfo from '../data/contactInfo'
 
 // ===== CLÉS EMAILJS =====
-const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 // ===== DONNÉES STATIQUES =====
 
 
-function Contact () {
+function Contact() {
 
   // ===== ICÔNES =====
   const icons = {
-    mail:  <Mail className="w-5 h-5" />,
+    mail: <Mail className="w-5 h-5" />,
     phone: <Phone className="w-5 h-5" />,
-    map:   <MapPin className="w-5 h-5" />,
+    map: <MapPin className="w-5 h-5" />,
   }
 
   // ===== STATE FORM =====
