@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { fadeUp, staggerContainer, defaultTransition } from '../util/animations'
 import { Phone } from 'lucide-react'
-import references from '../data/references'
+import reference from '../data/reference'
 
 function References() {
   return (
@@ -33,7 +33,7 @@ function References() {
           viewport={{ once: true, amount: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {references.map((ref, index) => (
+          {reference.map((ref, index) => (
             <motion.div
               key={ref.id}
               variants={fadeUp}
@@ -81,8 +81,8 @@ function References() {
 
                 {/* Téléphone */}
                 {ref.phone && (
-                  
-                    <a href={`tel:${ref.phone}`}
+
+                  <a href={`tel:${ref.phone}`}
                     className="flex items-center gap-2 text-primary-pale hover:text-primary-light text-xs mt-3 transition-colors duration-200 w-fit"
                   >
                     <Phone className="w-3 h-3" />

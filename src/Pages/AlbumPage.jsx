@@ -1,5 +1,5 @@
 // Page album — section Album seule
-import Album from '../Sections/Album'
+import Album from '../sections/Album'
 
 function AlbumPage() {
   return (

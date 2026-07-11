@@ -1,6 +1,6 @@
 // Page projets — section Projects seule
-import Projects from '../Sections/Projects'
-import References   from '../sections/References'
+import Projects from '../sections/Projects'
+import References from '../sections/References'
 
 
 function ProjectsPage() {

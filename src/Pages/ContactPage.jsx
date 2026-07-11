@@ -1,5 +1,5 @@
 // Page contact — section Contact seule
-import Contact from '../Sections/Contact'
+import Contact from '../sections/Contact'
 import Testimonials from '../sections/Testimonials'
 
 function ContactPage() {

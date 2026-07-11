@@ -3,7 +3,7 @@ import SkillBar from '../components/SkillBar'
 import SkillCard from '../components/SkillCard'
 
 // Import des données
-import { devSkills, creativeSkills } from '../data/skills'
+import { devSkills, creativeSkills } from '../data/skill'
 
 // Framer Motion
 import { motion } from 'framer-motion'

@@ -78,13 +78,12 @@ function ProjectDetail() {
 
           {/* Badge statut */}
           <div className="flex items-center gap-3 mb-4">
-            <span className={`text-xs px-3 py-1 rounded-full ${
-              project.status === 'terminé'
+            <span className={`text-xs px-3 py-1 rounded-full ${project.status === 'terminé'
                 ? 'bg-emerald-950 text-emerald-300 border border-emerald-800'
                 : project.status === 'en cours'
-                ? 'bg-amber-950 text-amber-300 border border-amber-800'
-                : 'bg-blue-950 text-blue-300 border border-blue-800'
-            }`}>
+                  ? 'bg-amber-950 text-amber-300 border border-amber-800'
+                  : 'bg-blue-950 text-blue-300 border border-blue-800'
+              }`}>
               {project.status}
             </span>
           </div>
@@ -118,8 +117,8 @@ function ProjectDetail() {
 
           {/* Boutons */}
           <div className="flex gap-4">
-            
-              <a href={project.demo}
+
+            <a href={project.demo}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 bg-primary hover:bg-primary-light text-white text-sm px-6 py-3 rounded-lg transition-colors duration-200"
@@ -127,8 +126,8 @@ function ProjectDetail() {
               <ExternalLink className="w-4 h-4" />
               Voir la démo
             </a>
-            
-              <a href={project.code}
+
+            <a href={project.code}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 border border-dark-border hover:border-primary text-slate-400 hover:text-primary-pale text-sm px-6 py-3 rounded-lg transition-colors duration-200"

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { fadeUp, staggerContainer, defaultTransition } from '../util/animations'
-import testimonials from '../data/testimonials'
+import testimonial from '../data/testimonial'
 
 // Étoiles — composant réutilisable
 function Stars({ count }) {
@@ -43,7 +43,7 @@ function Testimonials() {
           viewport={{ once: true, amount: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {testimonials.map((item, index) => (
+          {testimonial.map((item, index) => (
             <motion.div
               key={item.id}
               variants={fadeUp}
@@ -84,8 +84,8 @@ function Testimonials() {
                     {item.role}
                   </p>
                   {item.phone && (
-                    
-                     <a href={`tel:${item.phone}`}
+
+                    <a href={`tel:${item.phone}`}
                       className="text-primary-pale text-xs hover:text-primary-light transition-colors duration-200"
                     >
                       {item.phone}

@@ -1,9 +1,9 @@
-import gomez   from '../assets/Référence/Gomez.jpeg'
-import bgras   from '../assets/Référence/Bgras.jpeg'
-import kouyate from '../assets/Référence/Mr-Kouyate.jpeg'
-import camara  from '../assets/Référence/Mr-Camara.jpeg'
+import gomez from '../assets/reference/gomez.jpeg'
+import bgras from '../assets/reference/bgras.jpeg'
+import kouyate from '../assets/reference/mr-Kouyate.jpeg'
+import camara from '../assets/reference/mr-Camara.jpeg'
 
-const references = [
+const reference = [
   {
     id: 1,
     name: 'Mr Youssouf Gomez',
@@ -46,4 +46,4 @@ const references = [
   },
 ]
 
-export default references
+export default reference

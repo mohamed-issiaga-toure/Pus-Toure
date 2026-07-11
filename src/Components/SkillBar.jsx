@@ -1,5 +1,5 @@
 // Import de la fonction utilitaire
-import { getLevel } from '../data/skills'
+import { getLevel } from '../data/skill'
 
 // Import Framer Motion — animation de la barre
 import { motion } from 'framer-motion'

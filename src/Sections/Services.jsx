@@ -17,7 +17,7 @@ const icons = {
   chart:     BarChart3,
   brush:     Brush,
   megaphone: Megaphone,
-  search:    Search,
+  search:    Search
 }
 
 function Services() {

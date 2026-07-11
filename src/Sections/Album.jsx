@@ -1,4 +1,4 @@
-import albumPhotos from '../data/albumPhotos'
+import albumPhoto from '../data/albumPhoto'
 
 function Album() {
   return (
@@ -41,12 +41,11 @@ function Album() {
         ========================== */}
         <div className="flex animate-scroll w-max">
 
-          {[...albumPhotos, ...albumPhotos].map((photo, index) => (
+          {[...albumPhoto, ...albumPhoto].map((photo, index) => (
             <div
               key={`row1-${index}`}
-              className={`w-36 h-44 -mx-4.5 rounded-2xl border-2 border-dark-border overflow-hidden shrink-0 shadow-2xl hover:scale-105 hover:z-20 hover:rotate-0 transition-transform duration-300 ${
-                index % 2 === 0 ? 'rotate-[-8deg]' : 'rotate-6'
-              }`}
+              className={`w-36 h-44 -mx-4.5 rounded-2xl border-2 border-dark-border overflow-hidden shrink-0 shadow-2xl hover:scale-105 hover:z-20 hover:rotate-0 transition-transform duration-300 ${index % 2 === 0 ? 'rotate-[-8deg]' : 'rotate-6'
+                }`}
             >
               <img
                 src={photo.src}
@@ -64,12 +63,11 @@ function Album() {
         <div className="flex animate-scroll w-max -mt-6">
 
           {/* 🔥 même dataset mais key différente pour éviter conflit */}
-          {[...albumPhotos, ...albumPhotos].map((photo, index) => (
+          {[...albumPhoto, ...albumPhoto].map((photo, index) => (
             <div
               key={`row2-${index}`}
-              className={`w-36 h-44 -mx-4.5 rounded-2xl border-2 border-dark-border overflow-hidden shrink-0 shadow-2xl hover:scale-105 hover:z-20 hover:rotate-0 transition-transform duration-300 ${
-                index % 2 === 0 ? 'rotate-6' : 'rotate-[-8deg]'
-              }`}
+              className={`w-36 h-44 -mx-4.5 rounded-2xl border-2 border-dark-border overflow-hidden shrink-0 shadow-2xl hover:scale-105 hover:z-20 hover:rotate-0 transition-transform duration-300 ${index % 2 === 0 ? 'rotate-6' : 'rotate-[-8deg]'
+                }`}
             >
               <img
                 src={photo.src}

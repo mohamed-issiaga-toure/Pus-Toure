@@ -6,22 +6,22 @@ import { useEffect, useState } from 'react'
 
 function WhatsAppButton() {
 
-  // 📞 Mon numéro WhatsApp (format international SANS + ni espace)
+  //  Mon numéro WhatsApp (format international SANS + ni espace)
   const phoneNumber = '224629640564'
 
-  // 💬 Message automatique pré-rempli
+  //  Message automatique pré-rempli
   const message = 'Bonjour Mohamed, je vous contacte depuis votre portfolio.'
 
-  // 🔗 Création du lien WhatsApp officiel
+  //  Création du lien WhatsApp officiel
   // encodeURIComponent permet d’éviter les bugs avec les espaces et accents
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 
-  // 🎯 État pour gérer l’animation d’apparition
+  //  État pour gérer l’animation d’apparition
   const [visible, setVisible] = useState(false)
 
-  // ⚡ useEffect = exécuté au chargement du composant
+  // useEffect = exécuté au chargement du composant
   useEffect(() => {
-    // ⏳ On attend 800ms avant d’afficher le bouton (effet smooth)
+    //  On attend 800ms avant d’afficher le bouton (effet smooth)
     const timer = setTimeout(() => {
       setVisible(true)
     }, 800)
@@ -32,7 +32,7 @@ function WhatsAppButton() {
 
   return (
 
-    // 📦 Conteneur principal fixé à l’écran
+    // Conteneur principal fixé à l’écran
     <div
       className={`
         fixed bottom-6 right-6 z-50   /* position bas droite + priorité affichage */

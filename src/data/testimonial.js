@@ -1,7 +1,7 @@
-import ramah   from '../assets/Témoins/Ramah.jpeg'
-import sagno   from '../assets/Témoins/Sagno.jpeg'
-import amar    from '../assets/Témoins/Amar.jpeg'
-import karamba from '../assets/Témoins/Karamba.jpeg'
+import ramah   from '../assets/temoins/ramah.jpeg'
+import sagno   from '../assets/temoins/sagno.jpeg'
+import amar    from '../assets/temoins/amar.jpeg'
+import karamba from '../assets/temoins/karamba.jpeg'
 
 const testimonials = [
   {

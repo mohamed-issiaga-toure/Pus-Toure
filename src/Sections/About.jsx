@@ -1,50 +1,12 @@
-import monImage from '../assets/About.jpeg'
-
+import monImage from '../assets/about.jpeg'
 // Framer Motion
 import { motion } from "framer-motion"
 
+import { stack, parcours } from '../data/about'
 // Animations centralisées
 import { fadeLeft, fadeRight, defaultTransition } from "../util/animations"
 
-// Données des compétences
-const stack = [
-  'HTML / CSS',
-  'JavaScript',
-  'TypeScript',
-  'React js',
-  'React Native',
-  'Tailwind CSS',
-  'Boostrapp',
-  'Node.js',
-  'NestJS',
-  'MySQL',
-  'JAVA',
-  'Windev',
-  'Claude / Codex / AI Studio',
-  'GitHub'
-]
 
-// Parcours
-const parcours = [
-  {
-    id: 1,
-    annee: '2025',
-    titre: 'Diplôme MIAGE Bac+4',
-    lieu: 'Université Ahmadou Dieng — Conakry',
-  },
-  {
-    id: 2,
-    annee: '2023',
-    titre: 'Développeur Full-stack',
-    lieu: 'Projets personnels et de soutenance — React, Node.js, NestJS',
-  },
-  {
-    id: 3,
-    annee: '2021',
-    titre: 'Début du développement web',
-    lieu: 'HTML, CSS, JavaScript',
-  },
-]
 
 const histoire1 =
   "Né à Forécariah, installé à Conakry — je suis Mohamed Issiaga Touré,développeur Full-stack diplômé en MIAGE (Bac+4) à l'Université Ahmadou Dieng.Depuis 2021, je transforme des idées en expériences digitales en mobilisant React, TypeScript, Tailwind, Node.js, NestJS et MySQL."
@@ -52,10 +14,11 @@ const histoire1 =
 const histoire2 =
   "Passionné de nouvelles technologies, j'intègre les outils d'IA(Claude, Codex, Google AI Studio) pour augmenter ma productivitéet livrer plus vite. Mon ambition : concevoir des outils performants qui ont un impact réel, en Guinée et à travers le monde."
 
-function About() {
+function About () {
   return (
     <section id="about" className="py-24 bg-dark-bg">
       <div className="max-w-6xl mx-auto px-6">
+
 
         {/* ===== EN-TÊTE ===== */}
         <div className="mb-16">

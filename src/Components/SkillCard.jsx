@@ -1,5 +1,5 @@
 // Import de la fonction utilitaire
-import { getLevel } from '../data/skills'
+import { getLevel } from '../data/skill'
 
 // Props reçues :
 // - name       : nom de la technologie

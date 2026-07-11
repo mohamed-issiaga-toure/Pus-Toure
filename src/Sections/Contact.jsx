@@ -14,37 +14,17 @@ import { motion } from 'framer-motion'
 // Animations centralisées
 import { fadeUp, staggerContainer, defaultTransition } from '../util/animations'
 
+import contactInfo from '../data/contactInfo'
+
 // ===== CLÉS EMAILJS =====
 const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 // ===== DONNÉES STATIQUES =====
-const contactInfo = [
-  {
-    id: 1,
-    iconName: 'mail',
-    label: 'Email',
-    value: 'mohamedissiagat@gmail.com',
-    href: 'mailto:mohamedissiagat@gmail.com',
-  },
-  {
-    id: 2,
-    iconName: 'phone',
-    label: 'Téléphone',
-    value: '+224 629 64 05 64',
-    href: 'tel:+224629640564',
-  },
-  {
-    id: 3,
-    iconName: 'map',
-    label: 'Localisation',
-    value: 'Conakry, Guinée',
-    href: '#',
-  },
-]
 
-function Contact() {
+
+function Contact () {
 
   // ===== ICÔNES =====
   const icons = {
@@ -289,4 +269,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Contact;
