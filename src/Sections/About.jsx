@@ -14,7 +14,7 @@ const histoire1 =
 const histoire2 =
   "Passionné de nouvelles technologies, j'intègre les outils d'IA(Claude, Codex, Google AI Studio) pour augmenter ma productivitéet livrer plus vite. Mon ambition : concevoir des outils performants qui ont un impact réel, en Guinée et à travers le monde."
 
-function About () {
+function About() {
   return (
     <section id="about" className="py-24 bg-dark-bg">
       <div className="max-w-6xl mx-auto px-6">
