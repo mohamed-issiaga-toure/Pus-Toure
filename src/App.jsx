@@ -6,7 +6,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 
 import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
-import ProjectDetail from './pages/projectsPages/ProjectDetail'
+import ProjectDetail from './pages/projects-pages/ProjectDetail'
 import AlbumPage from './pages/AlbumPage'
 import ContactPage from './pages/ContactPage'
 
