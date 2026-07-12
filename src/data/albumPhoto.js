@@ -1,36 +1,36 @@
 // Import des 15 photos depuis le sous-dossier Album-photo
-import photo1  from '../assets/album-photo/photo-1.jpg'
-import photo2  from '../assets/album-photo/photo-2.jpg'
-import photo3  from '../assets/album-photo/photo-3.jpg'
-import photo4  from '../assets/album-photo/photo-4.jpg'
-import photo5  from '../assets/album-photo/photo-5.jpg'
-import photo6  from '../assets/album-photo/photo-6.jpeg'
-import photo7  from '../assets/album-photo/photo-7.jpg'
-import photo8  from '../assets/album-photo/photo-8.jpg'
-import photo9  from '../assets/album-photo/photo-9.jpeg'
-import photo10 from '../assets/album-photo/photo-10.jpeg'
-import photo11 from '../assets/album-photo/photo-11.jpeg'
-import photo12 from '../assets/album-photo/photo-12.jpeg'
-import photo13 from '../assets/album-photo/photo-13.png'
-import photo14 from '../assets/album-photo/photo-14.png'
-import photo15 from '../assets/album-photo/photo-15.jpeg'
+import photoA from '../assets/album-photo/photoA.jpg'
+import photoB from '../assets/album-photo/photoB.jpg'
+import photoC from '../assets/album-photo/photoC.jpg'
+import photoD from '../assets/album-photo/photoD.jpg'
+import photoE from '../assets/album-photo/photoE.jpg'
+import photoF from '../assets/album-photo/photoF.jpeg'
+import photoG from '../assets/album-photo/photoG.jpg'
+import photoH from '../assets/album-photo/photoH.jpg'
+import photoI from '../assets/album-photo/photoI.jpeg'
+import photoJ from '../assets/album-photo/photoJ.jpeg'
+import photoK from '../assets/album-photo/photoK.jpeg'
+import photoL from '../assets/album-photo/photoL.jpeg'
+import photoM from '../assets/album-photo/photoM.png'
+import photoN from '../assets/album-photo/photoN.png'
+import photoO from '../assets/album-photo/photoO.jpeg'
 
 const albumPhotos = [
-  { id: 1,  src: photo1  },
-  { id: 2,  src: photo2  },
-  { id: 3,  src: photo3  },
-  { id: 4,  src: photo4  },
-  { id: 5,  src: photo5  },
-  { id: 6,  src: photo6  },
-  { id: 7,  src: photo7  },
-  { id: 8,  src: photo8  },
-  { id: 9,  src: photo9  },
-  { id: 10, src: photo10 },
-  { id: 11, src: photo11 },
-  { id: 12, src: photo12 },
-  { id: 13, src: photo13 },
-  { id: 14, src: photo14 },
-  { id: 15, src: photo15 },
+  { id: 1, src: photoA },
+  { id: 2, src: photoB },
+  { id: 3, src: photoC },
+  { id: 4, src: photoD },
+  { id: 5, src: photoE },
+  { id: 6, src: photoF },
+  { id: 7, src: photoG },
+  { id: 8, src: photoH },
+  { id: 9, src: photoI },
+  { id: 10, src: photoJ },
+  { id: 11, src: photoK },
+  { id: 12, src: photoL },
+  { id: 13, src: photoM },
+  { id: 14, src: photoN },
+  { id: 15, src: photoO },
 ]
 
 export default albumPhotos
