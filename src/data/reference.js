@@ -1,7 +1,7 @@
 import gomez from '../assets/reference/gomez.jpeg'
 import bgras from '../assets/reference/bgras.jpeg'
-import kouyate from '../assets/reference/mr-Kouyate.jpeg'
-import camara from '../assets/reference/mr-Camara.jpeg'
+import kouyate from '../assets/reference/kouyate.jpeg'
+import camara from '../assets/reference/camara.jpeg'
 
 const reference = [
   {
