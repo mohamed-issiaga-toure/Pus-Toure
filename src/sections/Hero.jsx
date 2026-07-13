@@ -5,17 +5,17 @@ import useTypewriter from '../hooks/useTypewriter'
 import { motion } from "framer-motion"
 
 // Import des animations centralisées
-import { fadeLeft, fadeRight,staggerContainer, defaultTransition } from "../util/animations"
+import { fadeLeft, fadeRight, staggerContainer, defaultTransition } from "../util/animations"
 
 // Import de l'image
 import monImage from '../assets/monImage.png'
 
 // Titres qui défileront un par un
 const titles = [
-  'Développeur web full-stack .',
-  'Créateur de contenu .',
-  'Graphiste Designer .',
-  'Consultant digital .',
+  'Développeur web full-stack / Junior.',
+  'Technicien IT .',
+  'Créateur de contenu Tech .',
+  'Community manager.',
   'Freelance disponible .',
   'Marketing Digital'
 ]
@@ -40,78 +40,83 @@ function Hero() {
       <div className="max-w-6xl mx-auto px-6 py-20 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* ===== COLONNE GAUCHE ===== */}
-       {/* ===== COLONNE GAUCHE ===== */}
-<motion.div
-  variants={staggerContainer}
-  initial="hidden"
-  animate="visible"
->
+        {/* ===== COLONNE GAUCHE ===== */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+        >
 
-  {/* Badge — enfant animé 1 */}
-  <motion.div
-    variants={fadeLeft}
-    transition={defaultTransition}
-    className="inline-flex items-center gap-2 bg-dark-card border border-dark-border text-primary-pale text-xs px-4 py-2 rounded-full mb-6"
-  >
-    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-    Disponible pour opportunités
-  </motion.div>
+          {/* Badge — enfant animé 1 */}
+          <motion.div
+            variants={fadeLeft}
+            transition={defaultTransition}
+            className="inline-flex items-center gap-2 bg-dark-card border border-dark-border shadow-4xl shadow-primary text-primary-pale text-xs px-4 py-2 rounded-full mb-6"
+          >
+            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            Disponible pour opportunités
+          </motion.div>
 
-  {/* Titre — enfant animé 2 */}
-  <motion.h1
-    variants={fadeLeft}
-    transition={{ ...defaultTransition, delay: 0.1 }}
-    className="text-4xl md:text-5xl font-medium text-slate-200 leading-tight mb-4"
-  >
-    Bonjour, je suis <br />
-    <span className="text-primary-light">Pus Touré</span>
-  </motion.h1>
+          {/* Titre — enfant animé 2 */}
+          <motion.h1
+            variants={fadeLeft}
+            transition={{ ...defaultTransition, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-medium text-slate-200 leading-tight  mb-4"
+          >
+            Bonjour, je suis <br />
 
-  {/* Typewriter — enfant animé 3 */}
-  <motion.div
-    variants={fadeLeft}
-    transition={{ ...defaultTransition, delay: 0.2 }}
-    className="flex items-center gap-2 mb-6 h-8"
-  >
-    <span className="text-primary-light font-bold text-xl">Je suis</span>
-    <span className="text-primary-pale font-medium uppercase text-base">
-      {displayText}
-    </span>
-    <span className="w-0.5 h-5 bg-accent animate-pulse"></span>
-  </motion.div>
+            <h1 className="text-3xm font-bold bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Pus <span className="text-primary font-bold text-3xm tracking-wide mb-5">
+                Touré
+              </span>
+            </h1>
+          </motion.h1>
 
-  {/* Description — enfant animé 4 */}
-  {/* useTypewriter sur titles2 — pas d'affichage direct du tableau */}
-  <motion.p
-    variants={fadeLeft}
-    transition={{ ...defaultTransition, delay: 0.3 }}
-    className="text-accent text-base italic leading-relaxed mb-8 max-w-md"
-  >
-    Passionné par le développement web, je construis des solutions
-    robustes et scalables pour vos plateformes numériques.
-  </motion.p>
+          {/* Typewriter — enfant animé 3 */}
+          <motion.div
+            variants={fadeLeft}
+            transition={{ ...defaultTransition, delay: 0.2 }}
+            className="flex items-center gap-2 mb-6 h-8"
+          >
+            <span className="text-primary-light font-bold text-xl">Je suis</span>
+            <span className="text-primary font-medium uppercase text-base italic">
+              {displayText}
+            </span>
+            <span className="w-0.5 h-5 bg-accent animate-pulse"></span>
+          </motion.div>
 
-  {/* Boutons — enfant animé 5 */}
-  <motion.div
-    variants={fadeLeft}
-    transition={{ ...defaultTransition, delay: 0.4 }}
-    className="flex items-center gap-4"
-  >
-    
-     <a href="#projects"
-      className="bg-primary font-bold hover:bg-primary-light text-white text-sm px-6 py-3 rounded-full transition-colors duration-200"
-    >
-      Voir mes projets
-    </a>
-    
-     <a href="#contact"
-      className="border-2 border-dark-border font-bold hover:border-primary text-slate-400 hover:text-primary-pale text-sm px-6 py-3 rounded-full transition-colors duration-200"
-    >
-      Me contacter
-    </a>
-  </motion.div>
+          {/* Description — enfant animé 4 */}
+          {/* useTypewriter sur titles2 — pas d'affichage direct du tableau */}
+          <motion.p
+            variants={fadeLeft}
+            transition={{ ...defaultTransition, delay: 0.3 }}
+            className="text-accent text-base italic leading-relaxed mb-8 max-w-md"
+          >
+            Passionné par le développement web, je construis des solutions
+            robustes et scalables pour vos plateformes numériques.
+          </motion.p>
 
-</motion.div>
+          {/* Boutons — enfant animé 5 */}
+          <motion.div
+            variants={fadeLeft}
+            transition={{ ...defaultTransition, delay: 0.4 }}
+            className="flex items-center gap-4"
+          >
+
+            <a href="projects"
+              className="bg-primary font-bold hover:bg-primary-light text-white text-sm px-6 py-3 rounded-full transition-colors duration-200"
+            >
+              Voir mes projets
+            </a>
+
+            <a href="contact"
+              className="border-2 border-dark-border font-bold hover:border-primary text-slate-400 hover:text-primary-pale text-sm px-6 py-3 rounded-full transition-colors duration-200"
+            >
+              Me contacter
+            </a>
+          </motion.div>
+
+        </motion.div>
 
         {/* ===== COLONNE DROITE ===== */}
         <motion.div
@@ -119,12 +124,12 @@ function Hero() {
           initial="hidden"
           animate="visible"
           transition={{ ...defaultTransition, delay: 0.3 }}
-          className="flex justify-center lg:justify-end shadow-2xs"
+          className="flex justify-center lg:justify-end  "
         >
 
-          <div className="bg-dark-card border border-dark-border rounded-2xl p-2 w-90 h-full relative hover:border-primary transition-colors">
+          <div className="bg-dark-card border border-dark-border shadow-2xl shadow-primary rounded-2xl p-2 w-90 h-full relative hover:border-primary transition-colors">
 
-            <div className="absolute top-0 left-8 right-8 h-0.5 shadow-4xl rounded-full"></div>
+            <div className="absolute top-0 left-8 right-8 h-0.5  rounded-full"></div>
 
             <div className="w-full h-80 rounded-xl border border-dark-border overflow-hidden mb-4">
               <img

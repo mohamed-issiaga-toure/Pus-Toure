@@ -1,4 +1,4 @@
-// Import des 15 photos depuis le sous-dossier Album-photo
+// Import des 15 photos depuis le sous-dossier album-photo
 import photoA from '../assets/album-photo/photoA.jpg'
 import photoB from '../assets/album-photo/photoB.jpg'
 import photoC from '../assets/album-photo/photoC.jpg'
@@ -15,7 +15,7 @@ import photoM from '../assets/album-photo/photoM.png'
 import photoN from '../assets/album-photo/photoN.png'
 import photoO from '../assets/album-photo/photoO.jpeg'
 
-const albumPhotos = [
+const albumPhoto = [
   { id: 1, src: photoA },
   { id: 2, src: photoB },
   { id: 3, src: photoC },
@@ -33,4 +33,4 @@ const albumPhotos = [
   { id: 15, src: photoO },
 ]
 
-export default albumPhotos
+export default albumPhoto

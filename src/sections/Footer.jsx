@@ -64,7 +64,7 @@ function Footer() {
               Pus Touré Tech
             </p>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
-              Développeur Full-stack basé à Conakry, ouvert aux opportunités.
+              Développeur Web Full-stack, je transforme vos idées en projets concrêts, durables et maintenable.
             </p>
           </motion.div>
 

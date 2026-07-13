@@ -9,13 +9,14 @@ const SECTIONS = ['hero', 'about', 'skills', 'services', 'projects', 'album', 'c
 function NavBar() {
 
   const [isScrolled, setIsScrolled] = useState(false)
-  const [menuOpen, setMenuOpen]     = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const activeSection = useScrollSpy(SECTIONS)
   const navigate = useNavigate()
 
   // Gestion navigation — ancres ET pages
+  // La Foncton qui gère la navigation
   const handleNav = (href) => {
-    if (href.startsWith('/#')) {
+    if (href.startsWith('/#', '')) {
       // Ancre → on va sur Home puis on scrolle vers la section
       const sectionId = href.replace('/#', '')
       navigate('/')
@@ -44,11 +45,10 @@ function NavBar() {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      isScrolled
-        ? 'bg-dark-bg border-b border-dark-border shadow-lg'
-        : 'bg-dark-bg border-b border-dark-border'
-    }`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
+      ? 'bg-dark-bg border-b border-dark-border shadow-lg'
+      : 'bg-dark-bg border-b border-dark-border'
+      }`}>
 
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
@@ -67,11 +67,10 @@ function NavBar() {
             <li key={link.id}>
               <button
                 onClick={() => handleNav(link.href)}
-                className={`text-sm font-bold transition-all ${
-                  activeSection === link.href.replace('/', '').replace('#', '')
-                    ? 'text-primary-light border-b-2 border-primary-light pb-0.5'
-                    : 'text-slate-400 hover:text-primary-light'
-                }`}
+                className={`text-sm font-bold transition-all ${activeSection === link.href.replace('/', '').replace('#', '')
+                  ? 'text-primary-light border-b-2 border-primary-light pb-0.5'
+                  : 'text-slate-400 hover:text-primary-light'
+                  }`}
               >
                 {link.label}
               </button>
@@ -109,11 +108,10 @@ function NavBar() {
               <li key={link.id}>
                 <button
                   onClick={() => handleNav(link.href)}
-                  className={`text-sm font-bold transition-all block w-full text-left ${
-                    activeSection === link.href.replace('/', '').replace('#', '')
-                      ? 'text-primary-light'
-                      : 'text-slate-400 hover:text-primary-light'
-                  }`}
+                  className={`text-sm font-bold transition-all block w-full text-left ${activeSection === link.href.replace('/', '').replace('#', '')
+                    ? 'text-primary-light'
+                    : 'text-slate-400 hover:text-primary-light'
+                    }`}
                 >
                   {link.label}
                 </button>
