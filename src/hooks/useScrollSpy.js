@@ -21,20 +21,21 @@ function useScrollSpy(sections) {
           }
         })
       },
+
       {
-        // threshold: 0.3 = la section doit être visible à 30% minimum
+        // threshold: 0.5 = la section doit être visible à 50% minimum
         threshold: 0.3,
       }
     )
 
     // On observe chaque section
-    sections.forEach(id => {
+    sections.forEach((id) => {
       const element = document.getElementById(id)
       if (element) observer.observe(element)
     })
 
     // Nettoyage — on arrête d'observer quand le composant se démonte
-    return () => observer.disconnect()
+   //S return () => observer.disconnect()
 
   }, [sections])
 

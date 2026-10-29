@@ -20,12 +20,6 @@ const titles = [
   'Marketing Digital'
 ]
 
-const titles2 = [
-  ' Passionné par le développement web, ',
-  'Je construis des Solutions robustes et scalables ',
-  'pour vos plateformes numériques  .',
-]
-
 function Hero() {
 
   // Hook typewriter (inchangé)

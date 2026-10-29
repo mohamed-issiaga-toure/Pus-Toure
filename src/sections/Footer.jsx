@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 // Navigation
 import navLinks from "../data/navLinks"
 // Icônes Lucide
-import { ArrowUp, Mail, Music } from "lucide-react"
+import { ArrowUp, Mail } from "lucide-react"
 
 // Icônes réseaux sociaux (react-icons)
 import {

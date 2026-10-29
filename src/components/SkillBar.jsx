@@ -1,6 +1,3 @@
-// Import de la fonction utilitaire
-import { getLevel } from '../data/skill'
-
 // Import Framer Motion — animation de la barre
 import { motion } from 'framer-motion'
 
@@ -9,9 +6,6 @@ import { motion } from 'framer-motion'
 // - percentage : niveau en pourcentage (0-100)
 
 function SkillBar({ name, percentage }) {
-
-  // Niveau calculé depuis le pourcentage — badge et couleur
-  const level = getLevel(percentage)
 
   return (
     <div>

@@ -25,7 +25,7 @@ function useTypewriter(words = [], speed = 100, delay = 2000) {
     // Le mot actuellement en cours d'écriture/effacement
     const currentWord = words[wordIndex]
 
-    let timeout
+    let timeout;
 
     if (isTyping) {
       // --- PHASE ÉCRITURE ---
@@ -50,9 +50,11 @@ function useTypewriter(words = [], speed = 100, delay = 2000) {
         }, speed / 2)
       } else {
         // Mot complètement effacé → on passe au mot suivant
-        setIsTyping(true)
-        setWordIndex(prev => (prev + 1) % words.length)
-        // % words.length : revient à 0 après le dernier mot (boucle infinie)
+        timeout = setTimeout(() => {
+          setIsTyping(true)
+          setWordIndex(prev => (prev + 1) % words.length)
+          // % words.length : revient à 0 après le dernier mot (boucle infinie)
+        }, 0)
       }
     }
 

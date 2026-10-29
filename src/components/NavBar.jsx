@@ -61,8 +61,9 @@ function NavBar() {
           </h1>
         </button>
 
+
         {/* Liens desktop */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-8 ">
           {navLinks.map(link => (
             <li key={link.id}>
               <button
