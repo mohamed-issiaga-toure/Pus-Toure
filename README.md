@@ -1,16 +1,33 @@
-# React + Vite
+# 🌐 Mon Portfolio Personnel — Développeur Full-Stack & Designer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt du code source de mon site web portfolio personnel. Ce site présente mes compétences techniques, mes réalisations, mes projets récents et mes parcours d'accompagnement digital.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚡ Tech Stack & Outils
 
-## React Compiler
+* **Framework Front-end :** [Next.js](https://nextjs.org/) / [React.js](https://react.dev/)
+* **Styling :** [Tailwind CSS](https://tailwindcss.com/)
+* **Langage :** [TypeScript](https://www.typescriptlang.org/) / JavaScript
+* **Icons & Animation :** Lucide Icons, Framer Motion
+* **Déploiement :** [Vercel](https://vercel.com/) / Netlify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Fonctionnalités du Site
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Présentation & Bio :** Aperçu de mon parcours, de mes compétences et de mes diplômes.
+* **Showcase Projets :** Galerie interactive de mes réalisations web, mobiles et applicatives.
+* **Mes Services :** Détail de mes prestations (développement sur mesure, design UI/UX, conseil digital).
+* **Formulaire de Contact :** Prise de contact directe et liens vers mes réseaux professionnels.
+* **Design Responsive & Mode Sombre :** Adapté à tous les écrans (mobile, tablette, desktop).
+
+---
+
+## 🛠️ Installation et Lancement en Local
+
+Pour faire tourner le projet localement sur votre machine :
+
+1. **Cloner le dépôt :**
+   ```bash
+   git clone [https://github.com/mohamed-issiaga-toure/nom-de-ton-repo-portfolio.git](https://github.com/mohamed-issiaga-toure/nom-de-ton-repo-portfolio.git)
